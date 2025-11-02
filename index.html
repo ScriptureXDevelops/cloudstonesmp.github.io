@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>CloudstoneSMP</title>
+    
+
+  </head>
+    
+  <body>
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Cloudstone SMP</title>
+<style>
+  body {
+    margin: 0;
+    font-family: Poppins, Arial, sans-serif;
+    background-color: #0d0d0d;
+    color: #fff;
+  }
+
+  /* Nav Bar */
+  .navbar {
+    background-color: #00b33c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  }
+  .navbar img {
+    height: 40px;
+    margin: 0 40px;
+    cursor: pointer;
+  }
+  .nav-links {
+    display: flex;
+    gap: 20px;
+  }
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    transition: opacity 0.2s;
+  }
+  .nav-links a:hover {
+    opacity: 0.8;
+  }
+
+  /* Sections */
+  section {
+    display: none;
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #1a1a1a;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.4);
+  }
+  section.active {
+    display: block;
+  }
+
+  /* Home */
+  #home h1 {
+    color: #00b33c;
+    text-align: center;
+  }
+
+  /* Rules */
+  ul.rules {
+    list-style-type: decimal;
+    padding-left: 20px;
+  }
+  ul.rules li {
+    margin-bottom: 10px;
+    line-height: 1.5;
+  }
+
+  /* Staff Table */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+  }
+  th, td {
+    border-bottom: 1px solid #333;
+    padding: 10px;
+  }
+  th {
+    color: #00b33c;
+  }
+</style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <div class="navbar">
+    <div class="nav-links">
+      <a href="#" onclick="showPage('rules')">RULES</a>
+      <img src="https://media.discordapp.net/attachments/1405033464553668788/1434371950322384946/New_Project.png?ex=6908167a&is=6906c4fa&hm=189e3a5886593299e8d1d160284c05827b0a4cc79c9adf3b0d4e73384fa9487c&=&format=webp&quality=lossless" alt="Logo" onclick="showPage('home')">
+      <a href="#" onclick="showPage('staff')">STAFF</a>
+    </div>
+  </div>
+
+  <!-- HOME -->
+  <section id="home" class="active">
+    <h1>Cloudstone SMP</h1>
+    <p>
+      Cloudstone SMP is a server where players can survive
+      but if they die they lose a heart Lifesteal.
+      Join us if you want a challenging experience with no hackers. Do you want a hacker free server? Join our staff team and help us prevent hackers.
+    </p>
+    <p>
+      Our goal is to make sure players enjoy a new experience with different & unique features.
+      Join or Create your own team, build a team & battle other teams on the server. Become the richest & strongest team on the server.
+    </p>
+    
+    
+    
+    
+    
+    </p> Written & Published by ScriptureDevelops
+  </section>
+
+  <!-- RULES -->
+  <section id="rules">
+    <h2>Server Rules</h2>
+    <ul class="rules">
+      <li>Treat members with respect we do not tolerate bullying, harassment, or racism.</li>
+      <li>Any form of hacking/cheating is strictly prohibited and will result in a ban.</li>
+      <li>Do not spam, advertise, or use offensive language.</li>
+      <li>Keep gameplay fair no combat logging or heart glitches.</li>
+      <li>Follow staff instructions and maintain a positive environment.</li>
+      <li>Use common sense; if you think something isn’t allowed, don’t do it.</li>
+    </ul>
+  </section>
+
+  <!-- STAFF -->
+  <section id="staff">
+    <h2>Cloudstone SMP Staff Team</h2>
+    <table>
+      <tr><th>Username</th><th>Rank</th></tr>
+      <tr><td>IceBloxGaming</td><td>Owner</td></tr>
+      <tr><td>TheDiazCar</td><td>Moderator</td></tr>
+      <tr><td>Position Open</td><td>Moderator</td></tr>
+    </table>
+  </section>
+
+<script>
+  function showPage(page) {
+    document.querySelectorAll('section').forEach(sec => sec.classList.remove('active'));
+    document.getElementById(page).classList.add('active');
+  }
+</script>
+</body>
+</html>
+    
+  </body>
+  
+</html>
